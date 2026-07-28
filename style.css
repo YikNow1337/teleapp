@@ -1,31 +1,73 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body{
 
+margin:0;
 
-body {
+background:#87ceeb;
 
-    background: #222;
+overflow:hidden;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    height: 100vh;
-
-    overflow: hidden;
+font-family:Arial;
 
 }
 
+canvas{
 
-#game {
+display:block;
 
-    width: 400px;
+background:#87CEEB;
 
-    height: 700px;
+}
+
+#score{
+
+position:absolute;
+
+left:20px;
+
+top:20px;
+
+font-size:30px;
+
+font-weight:bold;
+
+}
+
+#jumpButton{
+
+position:absolute;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:200px;
+
+height:70px;
+
+font-size:26px;
+
+}
+
+#gameOver{
+
+display:none;
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+text-align:center;
 
 }
